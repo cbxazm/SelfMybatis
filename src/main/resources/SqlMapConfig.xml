@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--配置环境-->
+    <!--这个defalut的名字必须和下面的id名称一样，名字可以随便取-->
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                 <property name="driver" value="com.mysql.jdbc.Driver"></property>
+                 <property name="url" value="jdbc:mysql://localhost:3306/user"></property>
+                 <property name="username" value="root"></property>
+                 <property name="password" value="123"></property>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--指定映射文件-->
+    <mappers>
+        <mapper resource="com/cbx/dao/IUserDao.xml"></mapper>
+         <!--如果使用的是注解配置-->
+        <!--<mapper class="com.cbx.dao.IUserDao"></mapper>-->
+    </mappers>
+</configuration>
