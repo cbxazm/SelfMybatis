@@ -15,8 +15,8 @@
     </environments>
     <!--指定映射文件-->
     <mappers>
-        <mapper resource="com/cbx/dao/IUserDao.xml"></mapper>
+        <!--<mapper resource="com/cbx/dao/IUserDao.xml"></mapper>-->
          <!--如果使用的是注解配置-->
-        <!--<mapper class="com.cbx.dao.IUserDao"></mapper>-->
+        <mapper class="com.cbx.dao.IUserDao"></mapper>
     </mappers>
 </configuration>
